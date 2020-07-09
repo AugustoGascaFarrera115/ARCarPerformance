@@ -7,6 +7,7 @@ public class carSelection : MonoBehaviour
 
     //we craete an empty gameobject lsit
     GameObject[] carList;
+    int currentCar = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -35,9 +36,42 @@ public class carSelection : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void toggleCar(string direction)
     {
-        
+        carList[currentCar].SetActive(false);
+
+        if(direction == "Right")
+        {
+            currentCar++;
+
+            if(currentCar > carList.Length - 1)
+            {
+                currentCar = 0;
+            }
+
+
+        }
+        else if(direction == "Left")
+        {
+            currentCar--;
+
+            if(currentCar < 0)
+            {
+                currentCar = carList.Length - 1;
+
+            }
+
+        }
+
+        //set the car to be activate
+        carList[currentCar].SetActive(true);
+
+        GameObject cloudSystem = Instantiate(Resources.Load("cloudParticle")) as GameObject;
+        ParticleSystem cloudPuff = cloudSystem.GetComponent<ParticleSystem>();
+        cloudPuff.Play();
+        cloudPuff.transform.position = new Vector3(22f, -0.1f, -1f);
+        Destroy(cloudSystem, 2f);
+
+
     }
 }

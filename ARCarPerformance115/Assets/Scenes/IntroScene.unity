@@ -125,7 +125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1011019646912188, guid: 3a3027dbf7ab14cf386dbb0e96face7d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4637219169900690, guid: 3a3027dbf7ab14cf386dbb0e96face7d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -199,7 +199,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1787377745776038, guid: c7ad4a39587cd4a388cba51e939939a5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1959606887728810, guid: c7ad4a39587cd4a388cba51e939939a5, type: 3}
       propertyPath: m_Name
@@ -1294,7 +1294,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1487873212}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1330533328}
+        m_MethodName: toggleCar
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Left
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1487873212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1629,7 +1640,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1990882829}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1330533328}
+        m_MethodName: toggleCar
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Right
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1990882829
 MonoBehaviour:
   m_ObjectHideFlags: 0
