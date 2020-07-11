@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: 
+    vuforiaLicenseKey: AWS63hD/////AAABmX7NdHNH6ESnv0XZy4dwj2N5RDLAbVASLAQ/0FMH6Uv7ehCz2HawuMkFoRP3lrjnG/CYTI82DvYwGyIPnBoWmfcHLPOXgEX4njXCH5LtY+FMlRtyLL/oXAGsrv7xmpXs/k5N3DwMePhEnhuV06JMtScI1HLP/Ru3xjUU/eULE0HbMX+LCJfbwMHZutgR8EgqEy4FHMdXiJv7N+v38sga4YXYE2wT6N3XSxIff6slkjcpoeCB3A9axzMnI1dn+4dwXojXwZmcLnWqO0BA5cVIaXQ+T93WLSsWyqPzrhLE5rfm9XSaDvfZL3FKhe9yi+tjcRAZxMztY3ms+Ym8FdN0uIPa7Cf+iv12Cu1rrUSQNOYg
     ufoLicenseKey: QVNZV0cxWC8vLy8vQUFBQUtPN000M3ZYblVhd3IvODYwL2xRQ1dnT0xYN3ZWTUE0VDRqbnd4aUtvTG5TeWgydS83Q3pMaExYQkNkTUZ4cXBtTVluRWo5Y0xqaWtnNEQvc2lBUkZOSngxbUdmQlA2cVNId055ZWVGd0loRkFtS3JkVmlYbkFOUExwR3c3M0tmaWtxRnQxZmkrajJPanVPNmZQMUJLUjRGNHFvM3BDc0FvMi95Y3lwaDZhYVFkOVlISFN5TmI2WExqS0VLcXU3RmU1b1Z3NFVrUTdQTWV3YXBTRndPS3NteTYrekRXOWM5MmxCbkh2WTdvWVlUdmpSRWd1emEvSG14MkZacHFTVWlVNFhablZzSUluM0UrTkoxS2RSd0F6ejdMS29OMk5yTFBQNzF0OFhlS0tJN1d0UmpIQmZGZk5LVEp0VHM4T1c0OWJOVzVSQStMZ3kzeVREcHVlWjRHMDliQVQ2d29Nc29vMmtsL1l4eit3OHY=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
@@ -45,7 +45,7 @@ MonoBehaviour:
       FieldOfView: {x: 0, y: 0, z: 0, w: 0}
       ContainsMagnet: 0
   database:
-    disableModelExtraction: 1
+    disableModelExtraction: 0
   videoBackground:
     clippingMode: 0
     numDivisions: 2
@@ -57,7 +57,7 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
     arcoreRequirement: 1
-    trackingMode: 0
+    trackingMode: 1
     posePrediction: 0
     modelCorrectionMode: 0
     modelTransformEnabled: 0
