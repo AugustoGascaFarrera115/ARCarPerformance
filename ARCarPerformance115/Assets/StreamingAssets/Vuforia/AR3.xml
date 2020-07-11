@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="ajedrez" size="2.000000 1.125000" />
+    <ImageTarget name="dragon1" size="2.000000 1.125000" />
+    <ImageTarget name="galaxia" size="2.000000 1.125000" />
+    <ImageTarget name="CAMIONETA" size="2.000000 1.333984" />
+    <ImageTarget name="piramide" size="2.000000 1.250000" />
+    <ImageTarget name="CALEB1" size="2.000000 1.000000" />
+    <ImageTarget name="cyberpunk" size="2.000000 1.125000" />
+    <ImageTarget name="aalien" size="2.000000 1.125000" />
+  </Tracking>
+</QCARConfig>

@@ -16,7 +16,7 @@ public partial class Wit3D : MonoBehaviour {
 		if (jsonString != null) {
 
 			RootObject theAction = new RootObject ();
-			Newtonsoft.Json.JsonConvert.PopulateObject (jsonString, theAction);
+			JsonConvert.PopulateObject (jsonString, theAction);
 
 			if (theAction.entities.open != null) {
 				foreach (Open aPart in theAction.entities.open) {

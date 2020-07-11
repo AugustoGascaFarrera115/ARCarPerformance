@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Script: {fileID: -2067402452, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: 
-    ufoLicenseKey: QWZDQnY4Zi8vLy8vQUFBQUtBNkdMbTZzZVVmWnFaVWZhbVc0bVZFMG5MN1lHTUY2b2hBWlBFTkpDaURpWEMvMy9hNTJKaHllbjlpSjhRR3dUNnI3alNyU011QUFSWk9xUnpFdWlTbGRXeXJadXVieXVXQVRSVDRRbHByS1FyZFI2WmlPc2tzc2RmYnVmTWZIZ2l6NEkzSjd3WnVsS3dvS2VONUx0Z0hsWHJHdVNxQ2ZUN0djU3lQVVF4ZE9QTUdFK0pkNnBiOW9BR3RndzN4QWlra1pGNk5ZdFE3c3ExMFBieHZOQWJwalpPdHlGY2pmWDJ4NURYMVlaVU9VcEt4ZWpLbFhaRUVGeDZneTlRaWlxY3FqMDhrVnVTMWVxZStYTjJXU2VONmNST2VFa1lpY1JsVGx1dWhHM3ZDNXZWY3RkQklxemJNUGk5RjlBMW5QZGxTWEE0MUtPd0NZbzJmeUVBa3B6UE5ha09KY2hRSWxIUEFWdTM5NXg2L0U=
+    ufoLicenseKey: QVNZV0cxWC8vLy8vQUFBQUtPN000M3ZYblVhd3IvODYwL2xRQ1dnT0xYN3ZWTUE0VDRqbnd4aUtvTG5TeWgydS83Q3pMaExYQkNkTUZ4cXBtTVluRWo5Y0xqaWtnNEQvc2lBUkZOSngxbUdmQlA2cVNId055ZWVGd0loRkFtS3JkVmlYbkFOUExwR3c3M0tmaWtxRnQxZmkrajJPanVPNmZQMUJLUjRGNHFvM3BDc0FvMi95Y3lwaDZhYVFkOVlISFN5TmI2WExqS0VLcXU3RmU1b1Z3NFVrUTdQTWV3YXBTRndPS3NteTYrekRXOWM5MmxCbkh2WTdvWVlUdmpSRWd1emEvSG14MkZacHFTVWlVNFhablZzSUluM0UrTkoxS2RSd0F6ejdMS29OMk5yTFBQNzF0OFhlS0tJN1d0UmpIQmZGZk5LVEp0VHM4T1c0OWJOVzVSQStMZ3kzeVREcHVlWjRHMDliQVQ2d29Nc29vMmtsL1l4eit3OHY=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
+    maxSimultaneousImageTargets: 4
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
@@ -45,18 +45,19 @@ MonoBehaviour:
       FieldOfView: {x: 0, y: 0, z: 0, w: 0}
       ContainsMagnet: 0
   database:
-    disableModelExtraction: 0
+    disableModelExtraction: 1
   videoBackground:
     clippingMode: 0
     numDivisions: 2
-    videoBackgroundShader: {fileID: 0}
-    matteShader: {fileID: 0}
+    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
+      type: 3}
+    matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
-    arcoreRequirement: 0
-    trackingMode: 1
+    arcoreRequirement: 1
+    trackingMode: 0
     posePrediction: 0
     modelCorrectionMode: 0
     modelTransformEnabled: 0
@@ -65,6 +66,6 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: 
+    deviceNameSetInEditor: USB Camera
     turnOffWebCam: 0
     renderTextureLayer: 30
