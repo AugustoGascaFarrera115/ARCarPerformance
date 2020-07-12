@@ -45,15 +45,15 @@ public partial class Wit3D : MonoBehaviour {
 	int samplerate;
 
     // API access parameters
-    //string url = "https://api.wit.ai/speech?v=20180206";
-    //string token = "GS6J4YIN3645G6I3SDCJBE76PGHWTM7F";
+    string url = "https://api.wit.ai/speech?v=20180206";
+    string token = "GS6J4YIN3645G6I3SDCJBE76PGHWTM7F";
     //string url = "https://api.wit.ai/speech?v=20200710";
     //string token = "PIRLLW6I73ZRBT5RRFVA2N2OBHAMJK2B";
 
 
     //api parameters frommy wit ai app
-    string url = "https://api.wit.ai/speech?v=20200710";
-    string token = "UJOHY22IWUMPK42725IJSCJXZNVATMLI";
+    //string url = "https://api.wit.ai/speech?v=20200710";
+    //string token = "UJOHY22IWUMPK42725IJSCJXZNVATMLI";
 
 
     //Custom 1

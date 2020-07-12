@@ -12,6 +12,8 @@ public class carController : MonoBehaviour {
 		if (instance == null) {
 			instance = this;
 		}
+
+
 	}
 
 	// Use this for initialization
@@ -35,9 +37,18 @@ public class carController : MonoBehaviour {
 		 
 	}
 
-	//Called from _Handle
- 	public void triggerAnimation(string action){
-		anim.SetTrigger (action);
+    //Called from _Handle
+    public void triggerAnimation(string action) {
+
+
+        if(anim != null)
+        {
+            anim = GameObject.Find("/UserDefinedTarget-1/activeItems/" + gameController.currentSelectedCar).GetComponent<Animator>();
+
+            anim.SetTrigger(action);
+        }
+
+        
 	}
 
 	//Called from _Handle
